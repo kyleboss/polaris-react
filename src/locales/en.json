@@ -32,6 +32,7 @@
       "checkbox": "checkbox",
       "undo": "Undo",
       "cancel": "Cancel"
+      "newWindowAccessibilityHint": "(opens a new window)"
     },
 
     "ContextualSaveBar": {
