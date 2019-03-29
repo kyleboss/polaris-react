@@ -3,10 +3,11 @@ import {nodeContainsDescendant} from '@shopify/javascript-utilities/dom';
 import {write} from '@shopify/javascript-utilities/fastdom';
 import {classNames} from '@shopify/react-utilities/styles';
 import {isElementOfType, wrapWithComponent} from '@shopify/react-utilities';
+import {durationFast} from '@shopify/polaris-tokens';
 import {Transition} from 'react-transition-group';
 
 import {Key} from '../../../../types';
-import {overlay, Duration} from '../../../shared';
+import {overlay} from '../../../shared';
 import EventListener from '../../../EventListener';
 import KeypressListener from '../../../KeypressListener';
 import PositionedOverlay, {
@@ -63,7 +64,7 @@ export default class PopoverOverlay extends React.PureComponent<Props, never> {
     return (
       <Transition
         in={active}
-        timeout={Duration.Fast}
+        timeout={parseInt(durationFast, 10)}
         mountOnEnter
         unmountOnExit
       >
