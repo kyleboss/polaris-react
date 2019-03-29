@@ -1,6 +1,6 @@
 $button-size: rem(32px);
-$transition-duration: 260ms;
 $skip-vertical-offset: rem(10px);
+
 .Frame {
   width: 100%;
   min-height: 100vh;
@@ -48,14 +48,14 @@ $skip-vertical-offset: rem(10px);
 }
 .Navigation-enterActive {
   transform: translateX(0%);
-  transition: transform $transition-duration ease;
+  transition: transform duration(slow) easing(out);
 }
 .Navigation-exit {
   transform: translateX(0%);
 }
 .Navigation-exitActive {
   transform: translateX(-100%);
-  transition: transform $transition-duration ease;
+  transition: transform duration(slow) easing(out);
 }
 
 .NavigationDismiss {
@@ -109,14 +109,14 @@ $skip-vertical-offset: rem(10px);
 }
 .ContextualSaveBar-enterActive {
   opacity: 1;
-  transition: opacity duration() ease;
+  transition: opacity duration() easing(out);
 }
 .ContextualSaveBar-exit {
   opacity: 1;
 }
 .ContextualSaveBar-exitActive {
   opacity: 0;
-  transition: opacity duration() ease;
+  transition: opacity duration() easing(out);
 }
 
 .Main {
