@@ -18,11 +18,10 @@
   }
 }
 
-.IconLockup {
-  display: inline-flex;
-  align-items: center;
-
+.Icon {
   @include recolor-icon(currentColor);
+  display: inline-flex;
+  margin-left: rem(-4px);
 }
 
 .monochrome {
