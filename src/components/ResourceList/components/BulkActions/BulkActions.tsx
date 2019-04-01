@@ -370,7 +370,7 @@ export class BulkActions extends React.PureComponent<CombinedProps, State> {
               <div className={styles.ButtonGroup}>
                 <CSSTransition
                   in={selectMode}
-                  timeout={parseInt(durationBase, 10)}
+                  timeout={durationBase}
                   classNames={slideClasses}
                   appear
                 >

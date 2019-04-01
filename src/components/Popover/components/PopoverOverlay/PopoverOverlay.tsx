@@ -62,12 +62,7 @@ export default class PopoverOverlay extends React.PureComponent<Props, never> {
   render() {
     const {active} = this.props;
     return (
-      <Transition
-        in={active}
-        timeout={parseInt(durationFast, 10)}
-        mountOnEnter
-        unmountOnExit
-      >
+      <Transition in={active} timeout={durationFast} mountOnEnter unmountOnExit>
         {this.renderOverlay}
       </Transition>
     );

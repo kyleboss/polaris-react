@@ -12,9 +12,9 @@ Use [the changelog guidelines](https://git.io/polaris-changelog-guidelines) to f
 
 ### Enhancements
 
+- Updated `polaris-tokens` from `2.3.0` to `2.4.0` and converted all use of `duration` values ([#1268](https://github.com/Shopify/polaris-react/pull/1268))
 - Added a public `focus` method on `Banner` ([#1219](https://github.com/Shopify/polaris-react/pull/1219))
 - Added an `onScrollToBottom` prop to `Popover.Pane` ([#1248](https://github.com/Shopify/polaris-react/pull/1248))
-
 - Added a `placeholder` prop to `FilterControl` ([#1257](https://github.com/Shopify/polaris-react/pull/1257))
 
 ### Bug fixes

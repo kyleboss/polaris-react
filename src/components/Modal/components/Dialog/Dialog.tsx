@@ -54,7 +54,7 @@ export default function Dialog({
       {...props}
       mountOnEnter
       unmountOnExit
-      timeout={parseInt(durationBase, 10)}
+      timeout={durationBase}
       onEntered={onEntered}
       onExited={onExited}
     >

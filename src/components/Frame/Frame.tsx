@@ -130,7 +130,7 @@ export class Frame extends React.PureComponent<CombinedProps, State> {
           appear={mobileView}
           exit={mobileView}
           in={showMobileNavigation}
-          timeout={parseInt(durationBase, 10)}
+          timeout={durationBase}
           classNames={navTransitionClasses}
         >
           <div
