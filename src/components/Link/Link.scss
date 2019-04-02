@@ -25,7 +25,7 @@
   white-space: nowrap;
 
   &::before {
-    // Word joiner, AKA zero-width non-breaking space
+    // Word joiner, same as zero-width non-breaking space
     content: '\2060';
   }
 }
