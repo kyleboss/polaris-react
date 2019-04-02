@@ -1,4 +1,5 @@
 .Link {
+  @include recolor-icon(currentColor);
   appearance: none;
   display: inline;
   text-align: inherit;
@@ -18,10 +19,13 @@
   }
 }
 
-.Icon {
-  @include recolor-icon(currentColor);
+.IconLockup {
+  display: inline;
+  white-space: nowrap;
+}
+
+.IconLayout {
   display: inline-flex;
-  margin-left: rem(-4px);
 }
 
 .monochrome {
