@@ -40,9 +40,6 @@ function Link({
   let childrenMarkup = children;
 
   if (external && typeof children === 'string') {
-    // const nonBreakingSpace = String.fromCharCode(160);
-    // const zeroWidthSpace = String.fromCharCode(8203);
-    const wordJoiner = String.fromCharCode(8288);
     const iconLabel = polaris.intl.translate(
       'Polaris.Common.newWindowAccessibilityHint',
     );
@@ -51,9 +48,7 @@ function Link({
       <React.Fragment>
         {children}
         <span className={styles.IconLockup}>
-          {wordJoiner}
           <span className={styles.IconLayout}>
-            {wordJoiner}
             <Icon accessibilityLabel={iconLabel} source={ChevronLeftMinor} />
           </span>
         </span>

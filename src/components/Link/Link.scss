@@ -19,13 +19,24 @@
   }
 }
 
+// Prevents the icon from wrapping on its own to the next line
 .IconLockup {
   display: inline;
   white-space: nowrap;
+
+  &::before {
+    // Word joiner, AKA zero-width non-breaking space
+    content: '\2060';
+  }
 }
 
+// Vertically centers the icon
 .IconLayout {
   display: inline-flex;
+
+  &::before {
+    content: '\2060';
+  }
 }
 
 .monochrome {
